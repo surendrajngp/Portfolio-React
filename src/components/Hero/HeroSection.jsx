@@ -9,7 +9,8 @@ import {
   Overview,
   ProfileDownload,
 } from "./HeroElements";
-import { init } from "ityped";
+// import { init } from "ityped";
+const ReactRotatingText = require("react-rotating-text");
 
 const HeroSection = () => {
   const domains = [
@@ -18,19 +19,19 @@ const HeroSection = () => {
     "SQL Developer.",
   ];
 
-  useEffect(() => {
-    const myElement = document.querySelector("#myElement");
-    init(myElement, {
-      showCursor: false,
-      strings: domains,
-      typeSpeed: 150,
-      showCursor: true,
-      cursorChar: "|",
-    });
-  });
+  // useEffect(() => {
+  //   const myElement = document.querySelector("#myElement");
+  //   init(myElement, {
+  //     showCursor: false,
+  //     strings: domains,
+  //     typeSpeed: 150,
+  //     showCursor: true,
+  //     cursorChar: "|",
+  //   });
+  // });
 
   return (
-    <HeroSectionContent>
+    <HeroSectionContent id="home">
       <HeroContainer className="container">
         <div className="row d-flex align-items-center h-100">
           <div className="col-sm-6">
@@ -39,7 +40,13 @@ const HeroSection = () => {
               <Hero>Surendra Jangid</Hero>
               <HeroDomain>
                 I'm a&nbsp;
-                <HeroDynamicDomain id="myElement"></HeroDynamicDomain>
+                <HeroDynamicDomain id="myElement">
+                  <ReactRotatingText
+                    items={domains}
+                    pause={500}
+                    typingInterval={100}
+                  />
+                </HeroDynamicDomain>
               </HeroDomain>
               <Overview>
                 Dorem ipsum dolor sitamet, consectetur adipiscing elit, sed do

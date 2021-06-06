@@ -4,7 +4,7 @@ import { Link as LinkS } from "react-scroll";
 
 // Nav
 export const Nav = styled.nav`
-  background-color: black;
+  background-color: #f9f9ff;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -13,6 +13,8 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: 0.3s all ease;
+  position: relative;
 
   @media screen and (max-width: 960px) {
     transition: 0.5s all ease;
@@ -26,19 +28,24 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   padding: 0 24px;
   width: 100%;
-  max-width: 1140px;
 `;
 
 export const NavLogo = styled(LinkR)`
   display: flex;
   justify-self: flex-start;
-  align-items: center;
+  align-self: center;
   cursor: pointer;
-  color: #5088da;
+  color: #e45447;
   font-size: 1.5rem;
+  height: auto;
   font-weight: bold;
   text-decoration: none;
-  margin-left: 20px;
+  padding: 0 10px;
+  border: 1px solid red;
+
+  @media screen and (max-width: 960px) {
+    margin: 0;
+  }
 `;
 
 export const MobileIcon = styled.div`
@@ -49,8 +56,8 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    color: white;
-    transform: translate(-100%, 60%);
+    color: #e45447;
+    transform: translate(-100%, 40%);
     font-size: 1.8rem;
     cursor: pointer;
   } ;
@@ -61,6 +68,7 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
+  margin: 0;
   margin-right: -22px;
 
   @media screen and (max-width: 760px) {
@@ -73,22 +81,17 @@ export const NavItem = styled.li`
 `;
 
 export const NavLink = styled(LinkS)`
-  text-decoration: none;
-  color: #fff;
+  color: #222222;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
   height: 100%;
   padding: 0 1rem;
   cursor: pointer;
   font-weight: bold;
   transition: 0.3s ease-in-out;
-
   &:hover {
-    border-bottom: 2px solid white;
-    transition: 0.3s ease-in-out;
-  }
-  &.active {
-    border-bottom: 2px solid red;
+    color: inherit;
   }
 `;

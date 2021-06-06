@@ -3,7 +3,8 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 export const MobileMenuContainer = styled.aside`
   position: fixed;
-  left: 0;
+  left: -100;
+  top: 0;
   z-index: 99;
   height: 100%;
   width: 100%;
@@ -14,7 +15,7 @@ export const MobileMenuContainer = styled.aside`
 
   /* opacity if mobile menu is open */
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
 export const CloseIcon = styled(FaTimes)`

@@ -11,7 +11,7 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div id="home">
+    <div>
       <MobileMenu isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />

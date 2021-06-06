@@ -61,6 +61,7 @@ export const AboutMe = styled.p`
 export const MyInfo = styled.ul`
   margin-top: 1.5rem !important;
   list-style: none;
+  padding: 0;
 `;
 
 export const Info = styled.li`

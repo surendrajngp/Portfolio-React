@@ -10,6 +10,7 @@ import {
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
 import { animateScroll } from "react-scroll";
+
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
@@ -29,34 +30,104 @@ const Navbar = ({ toggle }) => {
     animateScroll.scrollToTop(10);
   };
 
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos < 150) {
+      document.getElementById("navbar").style.boxShadow = "none";
+      // document.getElementById("navbar").style.backgroundColor = "transparent";
+    } else {
+      document.getElementById("navbar").style.boxShadow =
+        "-1px 10px 18px -11px rgba(199, 187, 187, 0.808)";
+      // document.getElementById("navbar").style.backgroundColor = "#fff";
+    }
+    prevScrollpos = currentScrollPos;
+  };
   return (
     <React.Fragment>
-      <Nav scrollNav={scrollNav}>
-        <NavbarContainer>
+      <Nav scrollNav={scrollNav} id="navbar">
+        <NavbarContainer className="container">
           <NavLogo onClick={backToTop} to="/">
-            SKJ
+            Diamond Engineer
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLink to="home">Home</NavLink>
+              <NavLink
+                to="home"
+                smooth={true}
+                duration={100}
+                spy={true}
+                offset={-80}
+                exact="true"
+                activeClass="active1"
+              >
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="about">About</NavLink>
+              <NavLink
+                to="about"
+                smooth={true}
+                duration={100}
+                spy={true}
+                offset={-80}
+                exact="true"
+                activeClass="active1"
+              >
+                About
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="services">Services</NavLink>
+              <NavLink
+                to="resume"
+                smooth={true}
+                duration={100}
+                spy={true}
+                offset={-80}
+                exact="true"
+                activeClass="active1"
+              >
+                Resume
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="skills">Skills</NavLink>
+              <NavLink
+                to="skills"
+                smooth={true}
+                duration={100}
+                spy={true}
+                offset={-80}
+                exact="true"
+              >
+                Skills
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="projects">Projects</NavLink>
+              <NavLink
+                to="projects"
+                smooth={true}
+                duration={100}
+                spy={true}
+                offset={-80}
+                exact="true"
+              >
+                Projects
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="contact">Contact</NavLink>
+              <NavLink
+                to="contact"
+                smooth={true}
+                duration={100}
+                spy={true}
+                offset={-80}
+                exact="true"
+              >
+                Contact
+              </NavLink>
             </NavItem>
           </NavMenu>
         </NavbarContainer>

@@ -93,7 +93,7 @@ export const Education = styled.div`
 
 export const EducationDetails = styled.div`
   width: calc(100% - 100px);
-  padding-left: 10px;
+  padding-left: 15px;
   padding-bottom: 10px;
 
   & span {
@@ -151,7 +151,7 @@ export const Experience = styled.div`
 
 export const ExperiencenDetails = styled.div`
   width: calc(100% - 100px);
-  padding-left: 10px;
+  padding-left: 15px;
   padding-bottom: 10px;
 
   & span {
@@ -162,5 +162,78 @@ export const ExperiencenDetails = styled.div`
   & > h4 {
     font-size: 20px;
     font-weight: 700;
+  }
+`;
+
+// Skills
+export const SkillsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  & > h3 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+`;
+
+export const ProgressWrapper = styled.div`
+  /* width: 100%; */
+  margin-bottom: 30px;
+
+  & > h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+`;
+
+export const Progress = styled.div`
+  height: 6px;
+  background: #e6e6e6;
+  overflow: visible;
+  font-size: 0.75rem;
+  display: flex;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+`;
+
+export const ProgressBar = styled.div`
+  background: #90acd1;
+  /* position: relative; */
+  font-size: 12px;
+  line-height: 1.2;
+  color: #000000;
+  font-weight: 600;
+  position: relative;
+  overflow: visible;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  white-space: nowrap;
+  transition: widh 1.6s ease;
+  width: ${({ prog }) => (prog ? prog : "0")};
+  & > span {
+    position: absolute;
+    top: -38px;
+    right: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 36px;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      content: "";
+      background: #e45447;
+      border-radius: 50%;
+    }
   }
 `;
