@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   MobileIcon,
   Nav,
@@ -9,19 +9,39 @@ import {
   NavMenu,
 } from "./NavbarElements";
 import { FaBars } from "react-icons/fa";
-
+import { animateScroll } from "react-scroll";
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
+
+  const backToTop = () => {
+    animateScroll.scrollToTop(10);
+  };
+
   return (
     <React.Fragment>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">SKJ</NavLogo>
+          <NavLogo onClick={backToTop} to="/">
+            SKJ
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="home">Home</NavLink>
             </NavItem>
             <NavItem>
               <NavLink to="about">About</NavLink>

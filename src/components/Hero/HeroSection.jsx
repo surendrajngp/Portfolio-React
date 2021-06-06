@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import {
   HeroSectionContent,
   HeroContainer,
-  Row,
-  Col,
   Hello,
   Hero,
   HeroDomain,
@@ -15,7 +13,7 @@ import { init } from "ityped";
 
 const HeroSection = () => {
   const domains = [
-    "Computer Science Engineer.",
+    "Computer  Engineer.",
     "Front-End Developer.",
     "SQL Developer.",
   ];
@@ -26,19 +24,22 @@ const HeroSection = () => {
       showCursor: false,
       strings: domains,
       typeSpeed: 150,
+      showCursor: true,
+      cursorChar: "|",
     });
   });
 
   return (
     <HeroSectionContent>
       <HeroContainer className="container">
-        <Row>
-          <Col>
+        <div className="row d-flex align-items-center h-100">
+          <div className="col-sm-6">
             <div>
               <Hello>HEY! I AM</Hello>
-              <Hero>Surendra Jangid !</Hero>
+              <Hero>Surendra Jangid</Hero>
               <HeroDomain>
-                I'm a <HeroDynamicDomain id="myElement"></HeroDynamicDomain>
+                I'm a&nbsp;
+                <HeroDynamicDomain id="myElement"></HeroDynamicDomain>
               </HeroDomain>
               <Overview>
                 Dorem ipsum dolor sitamet, consectetur adipiscing elit, sed do
@@ -46,11 +47,11 @@ const HeroSection = () => {
               </Overview>
               <ProfileDownload>Download</ProfileDownload>
             </div>
-          </Col>
-          <Col>
+          </div>
+          <div className="col-sm-6">
             <div></div>
-          </Col>
-        </Row>
+          </div>
+        </div>
       </HeroContainer>
     </HeroSectionContent>
   );
