@@ -105,6 +105,10 @@ export const EducationDetails = styled.div`
     font-size: 20px;
     font-weight: 700;
   }
+
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
 `;
 
 export const ExperienceContainer = styled.div`
@@ -162,6 +166,9 @@ export const ExperiencenDetails = styled.div`
   & > h4 {
     font-size: 20px;
     font-weight: 700;
+  }
+  @media screen and (max-width: 760px) {
+    width: 100%;
   }
 `;
 

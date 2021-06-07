@@ -8,33 +8,7 @@ import {
   Info,
   MyInfo,
 } from "./AboutElements";
-
-const info = [
-  {
-    name: "Name",
-    text: "Surendra Jangid",
-  },
-  {
-    name: "Date of birth",
-    text: "December 15, 1999",
-  },
-  {
-    name: "Address",
-    text: "Nagpur, Maharashtra, India",
-  },
-  {
-    name: "Zip code",
-    text: "440024",
-  },
-  {
-    name: "Email",
-    text: "surendraj454@gmail.com",
-  },
-  {
-    name: "Phone",
-    text: "+91-7447365644",
-  },
-];
+import { info } from "../../Data/data";
 
 const AboutSection = () => {
   return (
@@ -49,7 +23,7 @@ const AboutSection = () => {
               />
             </div>
           </div>
-          <div className="col-sm-6">
+          <div className="col-sm-6 mt-5 mt-md-0">
             <div>
               <AboutHeading>
                 <h2>About Me</h2>

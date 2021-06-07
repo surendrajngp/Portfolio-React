@@ -1,3 +1,58 @@
+import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
+
+export const info = [
+  {
+    name: "Name",
+    text: "Surendra Jangid",
+  },
+  {
+    name: "Date of birth",
+    text: "December 15, 1999",
+  },
+  {
+    name: "Address",
+    text: "Nagpur, Maharashtra, India",
+  },
+  {
+    name: "Zip code",
+    text: "440024",
+  },
+  {
+    name: "Email",
+    text: "surendraj454@gmail.com",
+  },
+  {
+    name: "Phone",
+    text: "+91-7447365644",
+  },
+];
+
+export const education = [
+  {
+    year: "2018-2022",
+    degree: "B.E Computer Science Engineering",
+    college:
+      "S. B. Jain Institute Of Technology. Management & Research, Nagpur",
+  },
+  {
+    year: "2016-2018",
+    degree: "12th Computer Science",
+    college: "ST Paul Jr College Hudkeshwar",
+  },
+];
+
+export const experience = [
+  {
+    duration: "Sep 2020 - Dec 2020",
+    organization: "IIoT Labz, Nagpur",
+    rolw: "Web Developement Intern",
+  },
+  {
+    duration: "Jul 2020 - Sep 2020",
+    organization: "Savitar Incorporation, Nagpur",
+    rolw: "Web Developement Intern",
+  },
+];
 export const skills = [
   {
     skill: "HTML",
@@ -30,5 +85,23 @@ export const skills = [
   {
     skill: "GitHub",
     progress: "60%",
+  },
+];
+
+export const socialInfo = [
+  {
+    name: "LinkedIn",
+    icon: <FaLinkedinIn />,
+    url: "",
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub />,
+    url: "",
+  },
+  {
+    name: "Instagram",
+    icon: <FaInstagram />,
+    url: "",
   },
 ];

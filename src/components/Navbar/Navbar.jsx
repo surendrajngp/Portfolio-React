@@ -38,7 +38,7 @@ const Navbar = ({ toggle }) => {
       // document.getElementById("navbar").style.backgroundColor = "transparent";
     } else {
       document.getElementById("navbar").style.boxShadow =
-        "-1px 10px 18px -11px rgba(199, 187, 187, 0.808)";
+        "0 10px 15px rgb(25 25 25 / 10%)";
       // document.getElementById("navbar").style.backgroundColor = "#fff";
     }
     prevScrollpos = currentScrollPos;
@@ -48,7 +48,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav} id="navbar">
         <NavbarContainer className="container">
           <NavLogo onClick={backToTop} to="/">
-            Diamond Engineer
+            S J
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />

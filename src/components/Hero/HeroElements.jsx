@@ -12,7 +12,7 @@ export const Hello = styled.span`
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-  color: #90acd1;
+  color: #94b3db;
   letter-spacing: 4px;
   font-family: "Roboto", sans-serif;
   line-height: 1.625em;
@@ -25,11 +25,11 @@ export const Hero = styled.h1`
   color: #222222;
   line-height: 1.2;
 
-  @media screen and (max-width: 767px) {
-    font-size: 40px;
+  @media screen and (max-width: 768px) {
+    font-size: 42px;
   }
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 768px and (max-width: 991px)) {
     font-size: 55px;
   }
 `;

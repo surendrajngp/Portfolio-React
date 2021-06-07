@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AboutSection from "../components/About/AboutSection";
+import FooterSection from "../components/Footer/FooterSection";
 import HeroSection from "../components/Hero/HeroSection";
 import MobileMenu from "../components/MobileMenu/MobileMenu";
 import Navbar from "../components/Navbar/Navbar";
@@ -17,6 +18,7 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <ResumeSection />
+      <FooterSection />
     </div>
   );
 };

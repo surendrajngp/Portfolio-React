@@ -10,8 +10,9 @@ export const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky;
+  position: sticky !important;
   top: 0;
+  width: 100%;
   z-index: 10;
   transition: 0.3s all ease;
   position: relative;
@@ -38,6 +39,7 @@ export const NavLogo = styled(LinkR)`
   color: #e45447;
   font-size: 1.5rem;
   height: auto;
+  width: max-content;
   font-weight: bold;
   text-decoration: none;
   padding: 0 10px;
