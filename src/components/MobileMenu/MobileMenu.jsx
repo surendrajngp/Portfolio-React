@@ -16,22 +16,76 @@ const MobileMenu = ({ isOpen, toggle }) => {
       </Icon>
       <MobileMenuWrapper>
         <MobileMenuLinks>
-          <MobileLink onClick={toggle} to="/">
+          <MobileLink
+            to="home"
+            smooth={true}
+            duration={100}
+            spy={true}
+            offset={-80}
+            exact="true"
+            activeClass="active2"
+            onClick={toggle}
+          >
             Home
           </MobileLink>
-          <MobileLink onClick={toggle} to="about">
+          <MobileLink
+            to="about"
+            smooth={true}
+            duration={100}
+            spy={true}
+            offset={-80}
+            exact="true"
+            activeClass="active2"
+            onClick={toggle}
+          >
             About
           </MobileLink>
-          <MobileLink onClick={toggle} to="services">
-            Services
+          <MobileLink
+            to="resume"
+            smooth={true}
+            duration={100}
+            spy={true}
+            offset={-80}
+            exact="true"
+            activeClass="active2"
+            onClick={toggle}
+          >
+            Resume
           </MobileLink>
-          <MobileLink onClick={toggle} to="skills">
+          <MobileLink
+            to="home"
+            smooth={true}
+            duration={100}
+            spy={true}
+            offset={-80}
+            exact="true"
+            activeClass="active2"
+            onClick={toggle}
+          >
             Skills
           </MobileLink>
-          <MobileLink onClick={toggle} to="projects">
+          <MobileLink
+            to="home"
+            smooth={true}
+            duration={100}
+            spy={true}
+            offset={-80}
+            exact="true"
+            activeClass="active2"
+            onClick={toggle}
+          >
             Projects
           </MobileLink>
-          <MobileLink onClick={toggle} to="contact">
+          <MobileLink
+            to="home"
+            smooth={true}
+            duration={100}
+            spy={true}
+            offset={-80}
+            exact="true"
+            activeClass="active2"
+            onClick={toggle}
+          >
             Contact
           </MobileLink>
         </MobileMenuLinks>

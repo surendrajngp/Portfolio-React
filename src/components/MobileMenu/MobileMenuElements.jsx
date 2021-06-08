@@ -3,23 +3,23 @@ import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
 export const MobileMenuContainer = styled.aside`
   position: fixed;
-  left: -100;
+  left: 0;
   top: 0;
   z-index: 99;
   height: 100%;
   width: 100%;
-  background-color: #0d0d0d;
+  background-color: #f9f9ff;
   display: grid;
   align-items: center;
   transition: 0.4s ease-in-out;
 
   /* opacity if mobile menu is open */
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-  left: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
 export const CloseIcon = styled(FaTimes)`
-  color: #fff;
+  color: #e45447;
 `;
 
 export const Icon = styled.div`
@@ -33,7 +33,7 @@ export const Icon = styled.div`
 `;
 
 export const MobileMenuWrapper = styled.div`
-  color: #fff;
+  color: #e45447;
 `;
 
 export const MobileMenuLinks = styled.div`
@@ -52,11 +52,7 @@ export const MobileLink = styled(LinkS)`
   justify-content: center;
   font-size: 1.5rem;
   text-decoration: none;
-  color: white;
+  color: black;
   transition: 0.2s ease-in-out;
 
-  &:hover {
-    color: blue;
-    transition: 0.2s ease-in-out;
-  }
 `;

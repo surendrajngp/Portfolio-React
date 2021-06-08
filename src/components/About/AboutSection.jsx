@@ -9,18 +9,15 @@ import {
   MyInfo,
 } from "./AboutElements";
 import { info } from "../../Data/data";
-
+import Hero from "../../images/Hero.png";
 const AboutSection = () => {
   return (
     <AboutSectionContent id="about">
       <AboutContainer className="container">
         <div className="row align-items-center">
           <div className="col-sm-6">
-            <div>
-              <AboutImg
-                src="https://cobra-vue-nuxt-portfolio.netlify.app/assets/img/about-area/about.jpg"
-                alt="HeroImg"
-              />
+            <div className="text-center">
+              <AboutImg src={Hero} alt="HeroImg" />
             </div>
           </div>
           <div className="col-sm-6 mt-5 mt-md-0">

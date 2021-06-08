@@ -8,11 +8,12 @@ export const AboutSectionContent = styled.section`
 export const AboutContainer = styled.div``;
 
 export const AboutImg = styled.img`
-  outline: 10px solid #90acd1;
-  outline-offset: -54px;
+text-align: center;
+  outline: 5px solid #e45447;
+  /* outline-offset: -5px; */
   border: 44px solid transparent;
-  border-width: 0px 10px 0px 85px;
-  max-width: 90%;
+  border-width: 0px 10px 0px 8px;
+  max-width: 80%;
   height: auto;
 `;
 
