@@ -8,7 +8,9 @@ import {
   HeroDynamicDomain,
   Overview,
   ProfileDownload,
+  HeroImg,
 } from "./HeroElements";
+import HeroTop from "../../images/HeroTop.svg";
 // import { init } from "ityped";
 const ReactRotatingText = require("react-rotating-text");
 
@@ -56,7 +58,9 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="col-sm-6">
-            <div></div>
+            <div className="d-flex justify-content-center">
+              <HeroImg src={HeroTop} />
+            </div>
           </div>
         </div>
       </HeroContainer>

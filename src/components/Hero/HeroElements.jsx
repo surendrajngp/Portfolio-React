@@ -58,9 +58,11 @@ export const Overview = styled.p`
   font-size: 15px;
   font-weight: 400;
   line-height: 1.625em;
+  padding: 0;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 769px) {
     text-align: justify;
+    padding: 0;
   }
 `;
 
@@ -86,4 +88,10 @@ export const ProfileDownload = styled.a`
   vertical-align: middle;
 `;
 
-export const HeroImg = styled.img``;
+export const HeroImg = styled.img`
+  width: 80%;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+`;
