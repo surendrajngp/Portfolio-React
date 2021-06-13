@@ -15,7 +15,8 @@ body {
 }
 
 .active1 {
-  border-bottom: 2px solid #e45447;
+  /* border-bottom: 2px solid #e45447; */
+  color: #e45447 !important;
   transition: 0.3s ease-in-out;
 }
 

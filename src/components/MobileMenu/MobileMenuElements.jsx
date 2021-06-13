@@ -1,6 +1,7 @@
 import { FaTimes } from "react-icons/fa";
 import styled from "styled-components";
 import { Link as LinkS } from "react-scroll";
+
 export const MobileMenuContainer = styled.aside`
   position: fixed;
   left: 0;

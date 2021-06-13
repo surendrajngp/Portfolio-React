@@ -60,7 +60,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={100}
                 spy={true}
-                offset={-80}
+                offset={-70}
                 exact="true"
                 activeClass="active1"
               >
@@ -73,7 +73,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={100}
                 spy={true}
-                offset={-80}
+                offset={-60}
                 exact="true"
                 activeClass="active1"
               >
@@ -86,7 +86,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={100}
                 spy={true}
-                offset={-80}
+                offset={-60}
                 exact="true"
                 activeClass="active1"
               >
@@ -99,7 +99,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={100}
                 spy={true}
-                offset={-80}
+                offset={-60}
                 exact="true"
               >
                 Skills
@@ -111,7 +111,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={100}
                 spy={true}
-                offset={-80}
+                offset={-60}
                 exact="true"
               >
                 Projects
@@ -123,7 +123,7 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 duration={100}
                 spy={true}
-                offset={-80}
+                offset={-60}
                 exact="true"
               >
                 Contact

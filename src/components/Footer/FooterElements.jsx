@@ -33,7 +33,7 @@ export const ReactMe = styled.h4`
 `;
 
 export const SocialIcons = styled.div`
-  margin: 25px 0px 50px 0;
+  margin: 25px 0px 25px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@ export const SocialIcon = styled.a`
 
   & > svg {
     color: #cccccc;
-    font-size: 36px;
+    font-size: 26px;
     transition: all 0.5s ease-in-out\;;
   }
 

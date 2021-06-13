@@ -10,8 +10,9 @@ import {
   ProfileDownload,
   HeroImg,
 } from "./HeroElements";
+import { SocialIcons, SocialIcon } from "../Footer/FooterElements";
+import { socialInfo } from "../../Data/data";
 import HeroTop from "../../images/HeroTop.svg";
-// import { init } from "ityped";
 const ReactRotatingText = require("react-rotating-text");
 
 const HeroSection = () => {
@@ -20,22 +21,10 @@ const HeroSection = () => {
     "Front-End Developer.",
     "SQL Developer.",
   ];
-
-  // useEffect(() => {
-  //   const myElement = document.querySelector("#myElement");
-  //   init(myElement, {
-  //     showCursor: false,
-  //     strings: domains,
-  //     typeSpeed: 150,
-  //     showCursor: true,
-  //     cursorChar: "|",
-  //   });
-  // });
-
   return (
     <HeroSectionContent id="home">
       <HeroContainer className="container">
-        <div className="row d-flex align-items-center h-100">
+        <div className="row d-flex align-items-center flex-column-reverse flex-md-row h-100">
           <div className="col-sm-6">
             <div>
               <Hello>HEY! I AM</Hello>
@@ -51,15 +40,22 @@ const HeroSection = () => {
                 </HeroDynamicDomain>
               </HeroDomain>
               <Overview>
-                Dorem ipsum dolor sitamet, consectetur adipiscing elit, sed do
-                eiusm tempor incididunt ulabore et dolore magna aliqua.
+                Inquisitive, energetic computer science engineer skilled in
+                frontend development, database with a strong foundation in SQL,
+                javascript react.js and cross-platform coding.
               </Overview>
+
+              <SocialIcons className="justify-content-start">
+                {socialInfo.map((item, idx) => {
+                  return <SocialIcon  href={item.url}>{item.icon}</SocialIcon>;
+                })}
+              </SocialIcons>
               <ProfileDownload>Download</ProfileDownload>
             </div>
           </div>
           <div className="col-sm-6">
-            <div className="d-flex justify-content-center">
-              <HeroImg src={HeroTop} />
+            <div className="d-flex justify-content-center py-5 py-sm-0">
+              <HeroImg src={HeroTop} className="img-fluid" />
             </div>
           </div>
         </div>

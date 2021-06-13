@@ -5,7 +5,10 @@ export const HeroSectionContent = styled.section`
 `;
 
 export const HeroContainer = styled.div`
-  height: calc(100vh - 80px);
+  height: calc(100vh - 60px);
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
 `;
 
 export const Hello = styled.span`
@@ -58,7 +61,7 @@ export const Overview = styled.p`
   font-size: 15px;
   font-weight: 400;
   line-height: 1.625em;
-  padding: 0;
+  padding-right : 100px;
 
   @media screen and (max-width: 769px) {
     text-align: justify;
@@ -89,9 +92,5 @@ export const ProfileDownload = styled.a`
 `;
 
 export const HeroImg = styled.img`
-  width: 80%;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+  width: 70%;
 `;

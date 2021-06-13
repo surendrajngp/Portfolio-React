@@ -54,6 +54,7 @@ export const EducationContainer = styled.div`
   justify-content: center;
 
   & > h3 {
+    color: #222222;
     font-weight: 700;
     margin-bottom: 30px;
     font-size: 24px;
@@ -116,6 +117,7 @@ export const ExperienceContainer = styled.div`
   justify-content: center;
 
   & > h3 {
+    color: #222222;
     font-weight: 700;
     margin-bottom: 30px;
     font-size: 24px;
@@ -177,6 +179,7 @@ export const SkillsContainer = styled.div`
   display: flex;
   justify-content: center;
   & > h3 {
+    color: #222222;
     font-weight: 700;
     margin-bottom: 30px;
     font-size: 24px;

@@ -33,7 +33,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             smooth={true}
             duration={100}
             spy={true}
-            offset={-80}
+            offset={-35}
             exact="true"
             activeClass="active2"
             onClick={toggle}
@@ -45,7 +45,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             smooth={true}
             duration={100}
             spy={true}
-            offset={-80}
+            offset={-35}
             exact="true"
             activeClass="active2"
             onClick={toggle}
@@ -57,7 +57,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             smooth={true}
             duration={100}
             spy={true}
-            offset={-80}
+            offset={-35}
             exact="true"
             activeClass="active2"
             onClick={toggle}
@@ -69,7 +69,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             smooth={true}
             duration={100}
             spy={true}
-            offset={-80}
+            offset={-35}
             exact="true"
             activeClass="active2"
             onClick={toggle}
@@ -81,7 +81,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             smooth={true}
             duration={100}
             spy={true}
-            offset={-80}
+            offset={-35}
             exact="true"
             activeClass="active2"
             onClick={toggle}

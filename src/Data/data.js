@@ -86,6 +86,30 @@ export const skills = [
     skill: "GitHub",
     progress: "60%",
   },
+  {
+    skill: "SQL",
+    progress: "70%",
+  },
+  {
+    skill: "MySQL",
+    progress: "70%",
+  },
+  {
+    skill: "Self-directed Learning",
+    progress: "70%",
+  },
+  {
+    skill: "Leadership",
+    progress: "70%",
+  },
+  {
+    skill: "Microsoft Visual Studio Code",
+    progress: "70%",
+  },
+  {
+    skill: "Microsoft Azure Data Studio",
+    progress: "70%",
+  },
 ];
 
 export const socialInfo = [
