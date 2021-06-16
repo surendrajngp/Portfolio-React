@@ -95,14 +95,15 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLink
-                to="skills"
+                to="certificate"
                 smooth={true}
                 duration={100}
                 spy={true}
                 offset={-60}
                 exact="true"
+                activeClass="active1"
               >
-                Skills
+                Certificates
               </NavLink>
             </NavItem>
             <NavItem>
@@ -113,6 +114,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 offset={-60}
                 exact="true"
+                activeClass="active1"
               >
                 Projects
               </NavLink>
@@ -125,6 +127,7 @@ const Navbar = ({ toggle }) => {
                 spy={true}
                 offset={-60}
                 exact="true"
+                activeClass="active1"
               >
                 Contact
               </NavLink>

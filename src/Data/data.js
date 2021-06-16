@@ -1,5 +1,9 @@
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
-
+import RDMBS_Spoken_Tutorial from "../images/Certificates/RDMBS_Spoken_Tutorial.jpg";
+import SQL_HarckerRank from "../images/Certificates/SQL_HarckerRank.png";
+import Database_Design from "../images/Certificates/Database_Design.jpg";
+import SQL_SERVER_FOR_DBA from "../images/Certificates/SQL_SERVER_FOR_DBA.jpg";
+import Foundation_Data_Analytics from "../images/Certificates/Foundation_Data_Analytics.jpg";
 export const info = [
   {
     name: "Name",
@@ -127,5 +131,32 @@ export const socialInfo = [
     name: "Instagram",
     icon: <FaInstagram />,
     url: "",
+  },
+];
+
+export const certificates = [
+  {
+    id: 1,
+    src: RDMBS_Spoken_Tutorial,
+    alt: "Spoken tutorial RDBMS Certificate",
+  },
+  {
+    id: 2,
+    src: SQL_HarckerRank,
+  },
+  {
+    id: 3,
+    src: Database_Design,
+    alt: "Database Design",
+  },
+  {
+    id: 4,
+    src: SQL_SERVER_FOR_DBA,
+    alt: "SQl Server For Database Administrators",
+  },
+  {
+    id: 5,
+    src: Foundation_Data_Analytics,
+    alt: " ",
   },
 ];
