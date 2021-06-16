@@ -32,7 +32,7 @@ export const ImageSliderSetion = styled.section`
     position: absolute;
     background: #90acd1;
     z-index: -1;
-    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
   }
 `;
 
