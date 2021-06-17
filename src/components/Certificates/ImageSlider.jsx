@@ -16,7 +16,7 @@ const ImageSlider = () => {
   if (!Array.isArray(certificates) || certificates.length <= 0) {
     return null;
   }
-  
+
   setTimeout(() => {
     setActive(active === length - 1 ? 0 : active + 1);
   }, 5000);
@@ -28,12 +28,12 @@ const ImageSlider = () => {
   const previousSlide = () => {
     setActive(active === 0 ? length - 1 : active - 1);
   };
-  
+
   return (
     <ImageSliderSetion id="certificate">
       <div className="container position-relative">
-        <LeftArrow onClick={previousSlide} />
-        <RightArrow onClick={nextSlide} />
+        <LeftArrow size={40} onClick={previousSlide} />
+        <RightArrow size={40} onClick={nextSlide} />
 
         {certificates.map((certificate, index) => {
           return (

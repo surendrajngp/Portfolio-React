@@ -53,7 +53,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             Resume
           </MobileLink>
           <MobileLink
-            to="home"
+            to="certificate"
             smooth={true}
             duration={100}
             spy={true}
@@ -62,7 +62,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             activeClass="active2"
             onClick={toggle}
           >
-            Skills
+            certificate
           </MobileLink>
           <MobileLink
             to="home"

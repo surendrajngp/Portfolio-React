@@ -4,6 +4,11 @@ import SQL_HarckerRank from "../images/Certificates/SQL_HarckerRank.png";
 import Database_Design from "../images/Certificates/Database_Design.jpg";
 import SQL_SERVER_FOR_DBA from "../images/Certificates/SQL_SERVER_FOR_DBA.jpg";
 import Foundation_Data_Analytics from "../images/Certificates/Foundation_Data_Analytics.jpg";
+import MySQlL_Indexing_For_performance from "../images/Certificates/MySQlL_Indexing_For_performance.jpg";
+import Designing_and_Implementing_SQL_Server_Database_Indexes from "../images/Certificates/Designing_and_Implementing_SQL_Server_Database_Indexes.jpg";
+import Designing_and_Implementing_SQL_Server_Tables_and_Views from "../images/Certificates/Designing_and_Implementing_SQL_Server_Tables_and_Views.jpg";
+import Programming_SQL_Server_Database_Stored_Procedures from "../images/Certificates/Programming_SQL_Server_Database_Stored_Procedures.jpg";
+
 export const info = [
   {
     name: "Name",
@@ -158,5 +163,25 @@ export const certificates = [
     id: 5,
     src: Foundation_Data_Analytics,
     alt: " ",
+  },
+  {
+    id: 6,
+    src: MySQlL_Indexing_For_performance,
+    alt: "MySql Indexing For Performance",
+  },
+  {
+    id: 7,
+    src: Designing_and_Implementing_SQL_Server_Database_Indexes,
+    alt: "Designing and Implementing SQL Server Database Indexes",
+  },
+  {
+    id: 8,
+    src: Designing_and_Implementing_SQL_Server_Tables_and_Views,
+    alt: "Designing and Implementing SQL Server Tables and Views",
+  },
+  {
+    id: 9,
+    src: Programming_SQL_Server_Database_Stored_Procedures,
+    alt: "Programming SQL Server Database Stored Procedures",
   },
 ];
