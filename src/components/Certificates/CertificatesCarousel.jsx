@@ -50,6 +50,7 @@ const CertificatesCarousel = () => {
                   src={certificate.src}
                   alt={certificate.alt}
                   className="img-fluid shadow"
+                  loading="lazy"
                 />
               )}
             </Slide>

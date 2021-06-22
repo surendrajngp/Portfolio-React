@@ -25,8 +25,6 @@ export const ImageCarouselContainer = styled.div`
       background-color: #e45447;
     }
   }
-
-  
 `;
 
 export const RightArrow = styled(RiArrowRightSLine)`
@@ -40,6 +38,10 @@ export const RightArrow = styled(RiArrowRightSLine)`
   user-select: none;
   @media screen and (max-width: 768px) {
     right: 20px;
+  }
+
+  &:hover {
+    color: #e45447;
   }
 `;
 
@@ -55,10 +57,13 @@ export const LeftArrow = styled(RiArrowLeftSLine)`
   @media screen and (max-width: 768px) {
     left: 20px;
   }
+
+  &:hover {
+    color: #e45447;
+  }
 `;
 
 export const Slide = styled.div`
-
   opacity: 0;
   transition-duration: 1s ease;
   transform: scale(0.9);

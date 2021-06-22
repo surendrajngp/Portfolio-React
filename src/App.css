@@ -14,6 +14,9 @@ body {
   line-height: 1.625em;
 }
 
+body ::selection {
+  user-select: none;
+}
 .active1 {
   /* border-bottom: 2px solid #e45447; */
   color: #e45447 !important;
