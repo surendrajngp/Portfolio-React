@@ -56,8 +56,20 @@ export const EducationContainer = styled.div`
   & > h3 {
     color: #222222;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin: 30px 0 50px 0;
     font-size: 24px;
+    position: relative;
+
+&::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: auto;
+  margin-left: 20px;
+  width: 5%;
+  height: 3px;
+  background-color: #e45447;
+}
   }
 `;
 
@@ -119,8 +131,20 @@ export const ExperienceContainer = styled.div`
   & > h3 {
     color: #222222;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin: 30px 0 50px 0;
     font-size: 24px;
+    position: relative;
+
+&::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: auto;
+  margin-left: 20px;
+  width: 5%;
+  height: 3px;
+  background-color: #e45447;
+}
   }
 `;
 
@@ -181,8 +205,20 @@ export const SkillsContainer = styled.div`
   & > h3 {
     color: #222222;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin: 30px 0 50px 0;
     font-size: 24px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: auto;
+      margin-left: 20px;
+      width: 5%;
+      height: 3px;
+      background-color: #e45447;
+    }
   }
 `;
 
@@ -223,12 +259,13 @@ export const ProgressBar = styled.div`
   white-space: nowrap;
   transition: widh 1.6s ease;
   width: ${({ prog }) => (prog ? prog : "0")};
+  
   & > span {
     position: absolute;
     top: -38px;
     right: 0;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
     color: #000000;
     line-height: 1.2;
     text-align: center;

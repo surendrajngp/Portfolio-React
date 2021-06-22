@@ -53,19 +53,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             Resume
           </MobileLink>
           <MobileLink
-            to="certificate"
-            smooth={true}
-            duration={100}
-            spy={true}
-            offset={-35}
-            exact="true"
-            activeClass="active2"
-            onClick={toggle}
-          >
-            certificate
-          </MobileLink>
-          <MobileLink
-            to="home"
+            to="projects"
             smooth={true}
             duration={100}
             spy={true}

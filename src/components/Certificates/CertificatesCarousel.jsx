@@ -1,43 +1,50 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
-  ImageSliderSetion,
+  ImageCarouselContainer,
   LeftArrow,
   RightArrow,
   Slide,
   Img,
-} from "./ImageSliderElements";
+} from "./CertificatesCarouselElements";
 import { certificates } from "../../Data/data";
 
-const ImageSlider = () => {
+const CertificatesCarousel = () => {
   const [active, setActive] = useState(0); // active slide
   const length = certificates.length; // lenght of certificates
-  const activeSlide = "activeSlide text-center";
 
-  if (!Array.isArray(certificates) || certificates.length <= 0) {
-    return null;
-  }
+  // if (!Array.isArray(certificates) || certificates.length <= 0) {
+  //   return null;
+  // }
 
-  setTimeout(() => {
-    setActive(active === length - 1 ? 0 : active + 1);
-  }, 5000);
-
+  // Next Slide
   const nextSlide = () => {
     setActive(active === length - 1 ? 0 : active + 1);
   };
 
+  // previous Slide
   const previousSlide = () => {
     setActive(active === 0 ? length - 1 : active - 1);
   };
 
+  // Auto Play
+  useEffect(() => {
+    const id = setTimeout(() => setActive(nextSlide), 5000);
+    return () => clearTimeout(id);
+  }, [active]);
+
   return (
-    <ImageSliderSetion id="certificate">
-      <div className="container position-relative">
+    <ImageCarouselContainer className="row">
+      <h3>Certifications</h3>
+      <div className="col-sm-9 col-12 position-relative">
         <LeftArrow size={40} onClick={previousSlide} />
         <RightArrow size={40} onClick={nextSlide} />
 
         {certificates.map((certificate, index) => {
           return (
-            <Slide className={index === active ? activeSlide : ""} key={index}>
+            <Slide
+              className={index === active ? "activeSlide text-center" : ""}
+              key={index}
+            >
               {index === active && (
                 <Img
                   src={certificate.src}
@@ -49,8 +56,8 @@ const ImageSlider = () => {
           );
         })}
       </div>
-    </ImageSliderSetion>
+    </ImageCarouselContainer>
   );
 };
 
-export default ImageSlider;
+export default CertificatesCarousel;

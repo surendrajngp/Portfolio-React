@@ -18,6 +18,7 @@ import {
 } from "./ResumeElements";
 import { FaGraduationCap } from "react-icons/fa";
 import { skills, education, experience } from "../../Data/data";
+import CertificatesCarousel from "../Certificates/CertificatesCarousel";
 
 const ResumeSection = () => {
   return (
@@ -90,6 +91,7 @@ const ResumeSection = () => {
             </div>
           </div>
         </SkillsContainer>
+        <CertificatesCarousel />
       </ResumeContainer>
     </ResumeSectionContent>
   );

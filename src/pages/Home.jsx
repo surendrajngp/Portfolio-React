@@ -4,8 +4,8 @@ import FooterSection from "../components/Footer/FooterSection";
 import HeroSection from "../components/Hero/HeroSection";
 import MobileMenu from "../components/MobileMenu/MobileMenu";
 import Navbar from "../components/Navbar/Navbar";
+import Projects from "../components/Projects/Projects";
 import ResumeSection from "../components/Resume/ResumeSection";
-import ImageSlider from "../components/Certificates/ImageSlider";
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +19,7 @@ const Home = () => {
       <HeroSection />
       <AboutSection />
       <ResumeSection />
-      <ImageSlider />
+      {/* <Projects /> */}
       <FooterSection />
     </div>
   );

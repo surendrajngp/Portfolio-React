@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   position: sticky !important;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 99;
   transition: 0.3s all ease;
   position: relative;
 

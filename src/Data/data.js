@@ -185,3 +185,12 @@ export const certificates = [
     alt: "Programming SQL Server Database Stored Procedures",
   },
 ];
+
+export const projects = [
+  {
+    category: "Wordpress",
+  },
+  {
+    category: "React",
+  },
+];
