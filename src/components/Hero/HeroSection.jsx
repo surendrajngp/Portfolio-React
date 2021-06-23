@@ -47,7 +47,11 @@ const HeroSection = () => {
 
               <SocialIcons className="justify-content-start">
                 {socialInfo.map((item, idx) => {
-                  return <SocialIcon  href={item.url}>{item.icon}</SocialIcon>;
+                  return (
+                    <SocialIcon key={idx} href={item.url}>
+                      {item.icon}
+                    </SocialIcon>
+                  );
                 })}
               </SocialIcons>
               <ProfileDownload>Download</ProfileDownload>

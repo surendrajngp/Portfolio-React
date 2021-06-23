@@ -17,7 +17,7 @@ function App() {
 
   // disable F12
   document.onkeydown = (event) => {
-    if (window.event && window.event.keyCode == 123) {
+    if (window.event && window.event.keyCode === 123) {
       event.keyCode = 0;
       event.returnValue = false;
       return false;

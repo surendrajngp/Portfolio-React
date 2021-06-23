@@ -76,7 +76,7 @@ const ResumeSection = () => {
             <div className="row">
               {skills.map((value, idx) => {
                 return (
-                  <div className="col-md-6">
+                  <div key={idx} className="col-md-6">
                     <ProgressWrapper>
                       <h5>{value.skill}</h5>
                       <Progress>

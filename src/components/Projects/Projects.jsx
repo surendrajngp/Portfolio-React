@@ -22,8 +22,6 @@ const Button = ({ category, handleFilter }) => {
 const Projects = () => {
   const [category, setCategory] = useState("All");
   const [filteredProjects, setFilteredProjects] = useState([]);
-
-  console.log(projects);
   useEffect(() => {
     category === "All"
       ? setFilteredProjects(projects)
@@ -48,7 +46,10 @@ const Projects = () => {
             <div className="row">
               {filteredProjects.map((item, idx) => {
                 return (
-                  <div className="col-sm-4 col-11 mb-3 mx-auto mx-sm-0">
+                  <div
+                    key={idx}
+                    className="col-sm-4 col-11 mb-3 mx-auto mx-sm-0"
+                  >
                     <img
                       className="shadow img-thumbnail"
                       src={item.src}

@@ -17,11 +17,17 @@ const FooterSection = () => {
       <FooterContainer className="container">
         <div className="row">
           <div className="col-12 col-sm-12">
-            <FooterLogo to="home" offset={-70}>S J</FooterLogo>
+            <FooterLogo to="home" offset={-70}>
+              S J
+            </FooterLogo>
             <ReactMe>Reach Me</ReactMe>
             <SocialIcons>
               {socialInfo.map((item, idx) => {
-                return <SocialIcon href={item.url}>{item.icon}</SocialIcon>;
+                return (
+                  <SocialIcon key={idx} href={item.url}>
+                    {item.icon}
+                  </SocialIcon>
+                );
               })}
             </SocialIcons>
           </div>
