@@ -1,4 +1,6 @@
 import { FaLinkedinIn, FaInstagram, FaGithub } from "react-icons/fa";
+
+// Certificates
 import RDMBS_Spoken_Tutorial from "../images/Certificates/RDMBS_Spoken_Tutorial.jpg";
 import SQL_HarckerRank from "../images/Certificates/SQL_HarckerRank.png";
 import Database_Design from "../images/Certificates/Database_Design.jpg";
@@ -9,6 +11,14 @@ import Designing_and_Implementing_SQL_Server_Database_Indexes from "../images/Ce
 import Designing_and_Implementing_SQL_Server_Tables_and_Views from "../images/Certificates/Designing_and_Implementing_SQL_Server_Tables_and_Views.jpg";
 import Programming_SQL_Server_Database_Stored_Procedures from "../images/Certificates/Programming_SQL_Server_Database_Stored_Procedures.jpg";
 
+// Projects
+import Personal_Portfolio from "../images/Projects/Personal Portfolio.png";
+import Personal_Portfolio_2 from "../images/Projects/Personal Portfolio HTML CSS & JavaScript.png";
+import DatAlgo from "../images/Projects/DatAlgo.png";
+import Google_Search_Clone from "../images/Projects/Google Search Clone.png";
+import IIoT_Labz_Nagpur from "../images/Projects/IIoT Labz Nagpur.png";
+import The_Wall_Street_Journal from "../images/Projects/The Wall Street Journal.png";
+// -------------------
 export const info = [
   {
     name: "Name",
@@ -188,9 +198,39 @@ export const certificates = [
 
 export const projects = [
   {
-    category: "Wordpress",
+    id: 1,
+    title: "Personal Portfolio",
+    category: "React",
+    src: Personal_Portfolio,
   },
   {
+    id: 2,
+    title: "DatAlgo",
     category: "React",
+    src: DatAlgo,
+  },
+  {
+    id: 3,
+    title: "IIoTLabz.com",
+    category: "Wordpress",
+    src: IIoT_Labz_Nagpur,
+  },
+  {
+    id: 4,
+    title: "Google Search Clone",
+    category: "React",
+    src: Google_Search_Clone,
+  },
+  {
+    id: 5,
+    title: "Personal Portfolio HTML CSS & JavaScript",
+    category: "Static",
+    src: Personal_Portfolio_2,
+  },
+  {
+    id: 6,
+    title: "The Wall Street Journal Clone",
+    category: "React",
+    src: The_Wall_Street_Journal,
   },
 ];
