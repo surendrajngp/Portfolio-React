@@ -10,7 +10,7 @@ import MySQlL_Indexing_For_performance from "../images/Certificates/MySQlL_Index
 import Designing_and_Implementing_SQL_Server_Database_Indexes from "../images/Certificates/Designing_and_Implementing_SQL_Server_Database_Indexes.jpg";
 import Designing_and_Implementing_SQL_Server_Tables_and_Views from "../images/Certificates/Designing_and_Implementing_SQL_Server_Tables_and_Views.jpg";
 import Programming_SQL_Server_Database_Stored_Procedures from "../images/Certificates/Programming_SQL_Server_Database_Stored_Procedures.jpg";
-
+import Ask_Questions_to_Make_Data_Driven_Decisions from "../images/Certificates/Ask Questions to Make Data-Driven Decisions.jpg";
 // Projects
 import Personal_Portfolio from "../images/Projects/Personal Portfolio.png";
 import Personal_Portfolio_2 from "../images/Projects/Personal Portfolio HTML CSS & JavaScript.png";
@@ -176,21 +176,26 @@ export const certificates = [
   },
   {
     id: 6,
+    src: Ask_Questions_to_Make_Data_Driven_Decisions,
+    alt: "Ask Questions to Make Data-Driven Decisions ",
+  },
+  {
+    id: 7,
     src: MySQlL_Indexing_For_performance,
     alt: "MySql Indexing For Performance",
   },
   {
-    id: 7,
+    id: 8,
     src: Designing_and_Implementing_SQL_Server_Database_Indexes,
     alt: "Designing and Implementing SQL Server Database Indexes",
   },
   {
-    id: 8,
+    id: 9,
     src: Designing_and_Implementing_SQL_Server_Tables_and_Views,
     alt: "Designing and Implementing SQL Server Tables and Views",
   },
   {
-    id: 9,
+    id: 10,
     src: Programming_SQL_Server_Database_Stored_Procedures,
     alt: "Programming SQL Server Database Stored Procedures",
   },
