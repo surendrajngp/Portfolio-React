@@ -51,7 +51,7 @@ const ResumeSection = () => {
         </EducationContainer>
         {/* ------------ */}
         <ExperienceContainer className="row">
-          <h3>Experience</h3>
+          <h3>Industrial Exposure</h3>
           {experience.map((value, idx) => {
             return (
               <Experience key={idx} className="col-sm-9 col-11">

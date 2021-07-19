@@ -55,8 +55,13 @@ export const education = [
   },
   {
     year: "2016-2018",
-    degree: "12th Computer Science",
-    college: "ST Paul Jr College Hudkeshwar",
+    degree: "HSC (Science)",
+    college: "ST Paul Jr College Hudkeshwar, Nagpur",
+  },
+  {
+    year: "2016-2018",
+    degree: "SSC",
+    college: "Central Provincial School, Nagpur",
   },
 ];
 
@@ -135,17 +140,17 @@ export const socialInfo = [
   {
     name: "LinkedIn",
     icon: <FaLinkedinIn />,
-    url: "",
+    url: "https://www.linkedin.com/in/cse-surendra-jangid/",
   },
   {
     name: "GitHub",
     icon: <FaGithub />,
-    url: "",
+    url: "https://github.com/surendrajngp",
   },
   {
     name: "Instagram",
     icon: <FaInstagram />,
-    url: "",
+    url: "https://www.instagram.com/mr_diamondofficial",
   },
 ];
 

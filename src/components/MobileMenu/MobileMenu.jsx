@@ -64,7 +64,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
           >
             Projects
           </MobileLink>
-          <MobileLink
+          {/* <MobileLink
             to="home"
             smooth={true}
             duration={100}
@@ -75,7 +75,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
             onClick={toggle}
           >
             Contact
-          </MobileLink>
+          </MobileLink> */}
         </MobileMenuLinks>
       </MobileMenuWrapper>
     </MobileMenuContainer>
