@@ -67,20 +67,25 @@ export const education = [
 
 export const experience = [
   {
+    duration: "Mar 2022 - May 2022",
+    organization: "Mindtree Ltd",
+    rolw:"Software Developement Intern"
+  },
+  {
     duration: "Sep 2020 - Dec 2020",
-    organization: "IIoT Labz, Nagpur",
+    organization: "IIoT Labz",
     rolw: "Web Developement Intern",
   },
   {
     duration: "Jul 2020 - Sep 2020",
-    organization: "Savitar Incorporation, Nagpur",
+    organization: "Savitar Incorporation",
     rolw: "Web Developement Intern",
   },
 ];
 export const skills = [
   {
     skill: "HTML",
-    progress: "90%",
+    progress: "80%",
   },
   {
     skill: "CSS",
@@ -92,10 +97,14 @@ export const skills = [
   },
   {
     skill: "JavaScript",
-    progress: "70%",
+    progress: "60%",
   },
   {
     skill: "React.js",
+    progress: "50%",
+  },
+  {
+    skill: "C / C++",
     progress: "70%",
   },
   {
@@ -128,11 +137,7 @@ export const skills = [
   },
   {
     skill: "Microsoft Visual Studio Code",
-    progress: "70%",
-  },
-  {
-    skill: "Microsoft Azure Data Studio",
-    progress: "70%",
+    progress: "80%",
   },
 ];
 
@@ -150,7 +155,7 @@ export const socialInfo = [
   {
     name: "Instagram",
     icon: <FaInstagram />,
-    url: "https://www.instagram.com/mr_diamondofficial",
+    url: "https://www.instagram.com/isurendra_jangid",
   },
 ];
 

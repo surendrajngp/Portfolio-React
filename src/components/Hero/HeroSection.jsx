@@ -13,13 +13,15 @@ import {
 import { SocialIcons, SocialIcon } from "../Footer/FooterElements";
 import { socialInfo } from "../../Data/data";
 import HeroTop from "../../images/HeroTop.svg";
+import Resume_Surendra_Jangid from "../../Data/Resume_Surendra_Jangid.pdf";
+
 const ReactRotatingText = require("react-rotating-text");
 
 const HeroSection = () => {
   const domains = [
-    "Computer  Engineer.",
-    "Front-End Developer.",
-    "SQL Developer.",
+    "Computer Science Engineer",
+    "Web Developer",
+    "Data Engineering Enthusiast",
   ];
   return (
     <HeroSectionContent id="home">
@@ -48,13 +50,19 @@ const HeroSection = () => {
               <SocialIcons className="justify-content-start">
                 {socialInfo.map((item, idx) => {
                   return (
-                    <SocialIcon key={idx} href={item.url}>
+                    <SocialIcon key={idx} href={item.url} target="_blank">
                       {item.icon}
                     </SocialIcon>
                   );
                 })}
               </SocialIcons>
-              <ProfileDownload>Download</ProfileDownload>
+              <ProfileDownload
+                href={Resume_Surendra_Jangid}
+                target="_blank"
+                title="Resume"
+              >
+                Download
+              </ProfileDownload>
             </div>
           </div>
           <div className="col-sm-6">

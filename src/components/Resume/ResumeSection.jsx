@@ -34,7 +34,7 @@ const ResumeSection = () => {
           <h3>Education</h3>
           {education.map((value, idx) => {
             return (
-              <Education key={idx} className="col-sm-9 col-11">
+              <Education key={idx} className="col-sm-9 col-11 shadow-sm">
                 <EducationIcon>
                   <FaGraduationCap size={25} />
                 </EducationIcon>
@@ -54,7 +54,7 @@ const ResumeSection = () => {
           <h3>Industrial Exposure</h3>
           {experience.map((value, idx) => {
             return (
-              <Experience key={idx} className="col-sm-9 col-11">
+              <Experience key={idx} className="col-sm-9 col-11 shadow-sm">
                 <ExperienceIcon>
                   <FaGraduationCap size={25} />
                 </ExperienceIcon>

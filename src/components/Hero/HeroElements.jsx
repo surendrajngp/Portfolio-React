@@ -40,13 +40,13 @@ export const Hero = styled.h1`
 export const HeroDomain = styled.div`
   color: #e45447;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 42px;
   margin-bottom: 30px;
   display: flex;
   z-index: -1;
   @media screen and (max-width: 767px) {
-    font-size: 25px;
+    font-size: 22px;
   }
 `;
 
@@ -61,7 +61,7 @@ export const Overview = styled.p`
   font-size: 15px;
   font-weight: 400;
   line-height: 1.625em;
-  padding-right : 100px;
+  padding-right: 100px;
 
   @media screen and (max-width: 769px) {
     text-align: justify;
@@ -72,7 +72,7 @@ export const Overview = styled.p`
 export const ProfileDownload = styled.a`
   text-decoration: none;
   cursor: pointer;
-  padding: 25px 43px;
+  padding: 22px 40px;
   border-radius: 30px;
   background: #90acd1;
   color: #fff;
@@ -82,13 +82,19 @@ export const ProfileDownload = styled.a`
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 0;
-  transition: color 0.4s linear;
+  transition: 0.3s ease-in-out;
   position: relative;
   z-index: 1;
   overflow: hidden;
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
+
+  &:hover {
+    color: white;
+    background: #e45447;
+    transition: 0.3s ease-in-out;
+  }
 `;
 
 export const HeroImg = styled.img`

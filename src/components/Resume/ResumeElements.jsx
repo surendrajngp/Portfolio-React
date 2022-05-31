@@ -192,6 +192,7 @@ export const ExperiencenDetails = styled.div`
   & > h4 {
     font-size: 20px;
     font-weight: 700;
+    color : rgb(228, 84, 71);
   }
   @media screen and (max-width: 760px) {
     width: 100%;
