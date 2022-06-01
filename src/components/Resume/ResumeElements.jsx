@@ -94,11 +94,13 @@ export const Education = styled.div`
   color: #222222;
 
   &:hover {
-    background-color: #90acd1;
+    background-color: #3d5a80;
     transition: 0.3s all ease-in-out;
     color: #fff;
+    cursor:pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     & ${EducationIcon} {
-      color: #90acd1;
+      color: #3d5a80;
       background-color: #fff;
     }
   }
@@ -169,11 +171,13 @@ export const Experience = styled.div`
   color: #222222;
 
   &:hover {
-    background-color: #90acd1;
+    background-color: #3d5a80;
     transition: 0.3s all ease-in-out;
     color: #fff;
+    cursor:pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
     & ${ExperienceIcon} {
-      color: #90acd1;
+      color: #3d5a80;
       background-color: #fff;
     }
   }
@@ -192,7 +196,6 @@ export const ExperiencenDetails = styled.div`
   & > h4 {
     font-size: 20px;
     font-weight: 700;
-    color : rgb(228, 84, 71);
   }
   @media screen and (max-width: 760px) {
     width: 100%;
@@ -245,7 +248,7 @@ export const Progress = styled.div`
 `;
 
 export const ProgressBar = styled.div`
-  background: #90acd1;
+  background: #56ab91;
   /* position: relative; */
   font-size: 12px;
   line-height: 1.2;
@@ -267,7 +270,7 @@ export const ProgressBar = styled.div`
     right: 0;
     font-size: 14px;
     font-weight: 600;
-    color: #000000;
+    color: #3d5a80;
     line-height: 1.2;
     text-align: center;
     white-space: nowrap;
