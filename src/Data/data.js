@@ -18,6 +18,8 @@ import DatAlgo from "../images/Projects/DatAlgo.png";
 import Google_Search_Clone from "../images/Projects/Google Search Clone.png";
 import IIoT_Labz_Nagpur from "../images/Projects/IIoT Labz Nagpur.png";
 import The_Wall_Street_Journal from "../images/Projects/The Wall Street Journal.png";
+import HIXAA from "../images/Projects/HIXAA.png";
+
 // -------------------
 export const info = [
   {
@@ -69,7 +71,7 @@ export const experience = [
   {
     duration: "Mar 2022 - May 2022",
     organization: "Mindtree Ltd",
-    rolw:"Software Developement Intern"
+    rolw: "Software Developement Intern",
   },
   {
     duration: "Sep 2020 - Dec 2020",
@@ -227,7 +229,7 @@ export const projects = [
   {
     id: 3,
     title: "IIoTLabz.com",
-    category: "Wordpress",
+    category: "WordPress",
     src: IIoT_Labz_Nagpur,
   },
   {
@@ -247,5 +249,11 @@ export const projects = [
     title: "The Wall Street Journal Clone",
     category: "React",
     src: The_Wall_Street_Journal,
+  },
+  {
+    id: 7,
+    title: "HIXAA Automation and IoT",
+    category: "WordPress",
+    src: HIXAA,
   },
 ];

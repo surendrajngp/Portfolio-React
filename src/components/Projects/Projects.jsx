@@ -38,7 +38,7 @@ const Projects = () => {
             <Button category="All" handleFilter={setCategory}></Button>
             <Button category="Static" handleFilter={setCategory}></Button>
             <Button category="React" handleFilter={setCategory}></Button>
-            <Button category="Wordpress" handleFilter={setCategory}></Button>
+            <Button category="WordPress" handleFilter={setCategory}></Button>
           </div>
         </div>
         <SimpleReactLightbox>
